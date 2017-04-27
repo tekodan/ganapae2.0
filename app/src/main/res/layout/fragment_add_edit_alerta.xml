@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".data.data.addeditAlerta.AddEditAlertaFragment"
+    android:weightSum="1">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Texto"
+            android:inputType="textPersonName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:text="Alerta" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Imagen"
+            android:inputType="phone"
+            tools:text="image" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_latitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_latitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Latitud"
+            android:inputType="text"
+            tools:text="latitud" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_longitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_longitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|start"
+            android:hint="Longitud"
+            android:imeOptions="actionDone"
+            android:inputType="text|textMultiLine"
+            tools:text="" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:layout_width="898dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:id="@+id/sonido"
+            android:background="@drawable/ic_circle"
+            android:src="@android:drawable/ic_menu_camera"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:id="@+id/foto"
+            android:background="@drawable/ic_circle"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:text="grabar"
+            android:id="@+id/button1"
+            android:singleLine="true" />
+
+        <Button
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:text="b2"
+            android:id="@+id/button2"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="B3"
+            android:id="@+id/button3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView1"
+        android:layout_weight="0.39" />
+
+</LinearLayout>
